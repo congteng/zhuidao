@@ -1,0 +1,24 @@
+<%= form_for(@hope) do |f| %>
+  <% if notice %>   
+    <div class="notice">
+        <%= notice %>
+    </div>
+  <% end %>
+
+<div class="post">
+    <table>
+        <tr>
+            <td><%= f.label :name, "您的姓名:" %></td>
+            <td><%= f.text_field :name %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :say, "想对张孝祥老师说得话:" %></td>
+            <td><%= f.text_area :say %></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><%= f.submit "发表" %></td>
+        </tr>
+    </table>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1325445487.5320218:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%3e0113b780798f4cbf6e3b8849c61f61I"logical_path;
+FI"light.jpg;
+TI"pathname;
+FI"&$root/app/assets/images/light.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2012-01-02T03:18:06+08:00;
+FI"length;
+FI"	9631;
+FI"digest;
+F"%51f80c497329dd848f79b4436f8e9f5cI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

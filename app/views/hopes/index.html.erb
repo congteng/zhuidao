@@ -1,0 +1,27 @@
+
+<div class="recent">
+    <table>
+    <% @hopes.each do |hope| %>
+     <tr>
+        <td><%= truncate(strip_tags(hope.name), length: 8) %>&nbsp; 对张老师说: &nbsp; </td>
+        <td><%= truncate(strip_tags(hope.say), length: 40) %></td>
+    </tr>
+    <% end %>
+    
+    </table>
+    <% if @count == 0 %>
+        <div class="nothing">
+            暂无记录
+        </div>
+    <% else %>
+        <div class="count">已有&nbsp;<%= @count%>&nbsp;条记录</div>
+        <div class="more"> 
+            <%= link_to "查看更多", "hopes/all"%>
+        </div>
+    <% end %>
+    
+</div>
+<br />
+<%= render 'form' %>
+
+

@@ -1,0 +1,19 @@
+ 
+	 <% @hopes.each do |hope| %>
+		<div class="part">
+			<%= truncate(strip_tags(hope.name), length: 8) %> &nbsp; 对张老师说: <br/>
+			&nbsp; &nbsp; &nbsp; &nbsp; <%= truncate(strip_tags(hope.say), length: 80) %>
+			<br/>
+			<div class="displayAll">
+				<%= button_to "删除", hope, confirm: 'Are you sure?', method: :delete %>
+			</div>
+		</div>
+    <% end %>
+    
+    <div class="apple_pagination">
+		<%= will_paginate @posts, :container => false %>
+	</div>
+
+
+ 
+

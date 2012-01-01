@@ -1,0 +1,30 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: zhuidao_dev
+  pool: 5
+  username: 123123
+  password: 123123
+  host: localhost
+
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: zhuidao_test
+  pool: 5
+  username: 123123
+  password: 123123
+  host: localhost
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: zhuidao_production
+  pool: 5
+  username: 123123
+  password: 123123
+  host: localhost
